@@ -79,3 +79,10 @@ FROM Pracownicy P
 LEFT JOIN Zatrudnienie Z ON P.Id_prac = Z.Id_prac
 GROUP BY P.Id_prac, P.Imię, P.Nazwisko;
 ```
+
+# 1.15.2
+
+Jako że w wykładzie opisane jest, że klaster łączy się poprzed powiązanie tabel wspólną kolumną, to widzę tutaj 2 klastry:
+
+- Klienci-Sprzedaż - powiązane Id_klienta,
+- Pracownicy-Zatrudnienie - powiązane Id_prac.
